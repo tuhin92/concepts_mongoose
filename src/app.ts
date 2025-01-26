@@ -7,8 +7,6 @@ app.use(express.json());
 app.use(cors());
 
 //routes
-app.get('/' , (req: Request , res: Response) => {
-    res.send('Hello World!');
-});
+app.get('/', getAController);
 
 export default app;
